@@ -1,0 +1,16 @@
+<div class="container">
+
+    <div class="row">
+        <div class="col-xs-12">
+            <ul class="list-group" *ngFor=" let film of films">
+                <li class="list-group-item">
+                    <h4> {{film.movieName}}</h4>
+                    <button type="button" [routerLink]="['/films',film.movieId]" class="btn btn-primary">Detail</button>
+
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+</div>
